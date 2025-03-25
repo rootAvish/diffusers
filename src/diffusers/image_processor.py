@@ -482,7 +482,7 @@ class VaeImageProcessor(ConfigMixin):
             width (`int`):
                 The width to resize to.
             resize_mode (`str`, *optional*, defaults to `default`):
-                The resize mode to use, can be one of `default` or `fill`. If `default`, will resize the image to fit
+                The resize mode to use, can be one of `default`, `crop` or `fill`. If `default`, will resize the image to fit
                 within the specified width and height, and it may not maintaining the original aspect ratio. If `fill`,
                 will resize the image to fit within the specified width and height, maintaining the aspect ratio, and
                 then center the image within the dimensions, filling empty with data from image. If `crop`, will resize
